@@ -19,4 +19,7 @@
   # Bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
+
+  # Flatpak
+  services.flatpak.enable = true;
 }

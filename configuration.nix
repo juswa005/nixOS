@@ -61,7 +61,7 @@
   users.users."amiel" = {
     isNormalUser = true;
     description = "Amiel Josh Basug";
-    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" "kvm" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" "kvm" "docker" ];
     packages = with pkgs; [];
     shell = pkgs.fish;
   };

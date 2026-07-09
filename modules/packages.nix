@@ -1,4 +1,4 @@
-
+{ pkgs, ... }:
 
 {
   # ==========================================
@@ -27,6 +27,9 @@
     eza
     dysk
     tree
+    ncdu
+    yazi
+    browsh
 
     # Hyprland & Wayland Environment
     waybar
@@ -42,6 +45,10 @@
     hyprsunset
     hypridle
     hyprlock
+    hyprpicker
+    hyprpolkitagent
+    hyprsysteminfo
+    hyprcursor
     libnotify
 
     # System & Networking
@@ -54,12 +61,10 @@
 
     # Applications
     kitty
-    chromium
     nautilus
     spotify
     gnome-calculator
     localsend
-    vivaldi
 
     # Theming & Appearance
     adwaita-icon-theme
@@ -69,6 +74,34 @@
     vscodium
     nodejs
     quickemu
+
+    # Minecraft
+    prismlauncher
+    (mcpelauncher-ui-qt.overrideAttrs (oldAttrs: {
+      patches = (oldAttrs.patches or []) ++ [
+        (pkgs.writeText "googleaccount.patch" ''
+diff --git a/mcpelauncher-ui-qt/googleloginhelper.cpp b/mcpelauncher-ui-qt/googleloginhelper.cpp
+--- a/mcpelauncher-ui-qt/googleloginhelper.cpp
++++ b/mcpelauncher-ui-qt/googleloginhelper.cpp
+@@ -1,6 +1,7 @@
+ #include "googleloginhelper.h"
+ 
+ #include <googleloginwindow.h>
++#include <QQmlEngine>
+ #include <QStandardPaths>
+ #include <QDir>
+ #include <QWindow>
+@@ -14,6 +15,7 @@
+ }
+ 
+ GoogleLoginHelper::GoogleLoginHelper() : loginCache(getTokenCachePath()), login(device, loginCache) {
++    QQmlEngine::setObjectOwnership(&currentAccount, QQmlEngine::CppOwnership);
+     unlockkey = settings.value("key").toString();
+     loadAccount();
+ }
+        '')
+      ];
+    }))
   ];
 
   # Shell configuration
