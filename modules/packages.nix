@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+
 
 {
   # ==========================================
@@ -59,6 +59,7 @@
     spotify
     gnome-calculator
     localsend
+    vivaldi
 
     # Theming & Appearance
     adwaita-icon-theme
