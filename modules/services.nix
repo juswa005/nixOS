@@ -8,11 +8,9 @@
   # Virtual Private Network
   services.tailscale.enable = true;
   
-  # Containerization and Virtualization
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
+  # Containerization
   virtualisation.docker.enable = true;
-  
+
   # Power Profiles Daemon (needed for powermode.sh)
   services.power-profiles-daemon.enable = true;
 

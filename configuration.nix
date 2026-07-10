@@ -37,6 +37,7 @@
     "quiet"
     "rd.udev.log_level=3"
     "rd.systemd.show_status=auto"
+    "btusb.enable_autosuspend=0"
   ];
 
   # Set your time zone.
@@ -61,7 +62,7 @@
   users.users."amiel" = {
     isNormalUser = true;
     description = "Amiel Josh Basug";
-    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" "kvm" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [];
     shell = pkgs.fish;
   };
