@@ -20,6 +20,7 @@
       ./modules/desktop.nix
       ./modules/networking.nix
       ./modules/services.nix
+      ./modules/aliases.nix
     ];
 
   # Bootloader.

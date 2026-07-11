@@ -68,6 +68,8 @@
     yazi
     browsh
     lazygit
+    qbittorrent-cli
+    zoxide
 
     # Hyprland & Wayland Environment
     waybar
@@ -96,6 +98,7 @@
     networkmanagerapplet
     overskride
     tailscale
+    qbittorrent
 
     # Applications
     kitty
@@ -104,6 +107,7 @@
     gnome-calculator
     localsend
     dbeaver-bin
+    mpv
 
     # Theming & Appearance
     adwaita-icon-theme
