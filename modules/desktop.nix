@@ -19,6 +19,8 @@
 
   # Dconf for GNOME apps and theming
   programs.dconf.enable = true;
+  # SSHASKPASS shit
+  programs.ssh.askPassword = "";
 
   # Fonts configuration
   fonts.packages = with pkgs; [

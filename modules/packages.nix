@@ -108,6 +108,7 @@
     localsend
     dbeaver-bin
     mpv
+    onlyoffice-desktopeditors
 
     # Theming & Appearance
     adwaita-icon-theme
@@ -116,11 +117,15 @@
     # Development & Virtualization
     vscodium
     nodejs
+    distrobox
 
     # Minecraft
     prismlauncher
     mcpelauncher-client
     mcpelauncher-ui-qt
+
+    # CTF
+    tcpdump
   ];
 
   # Shell configuration

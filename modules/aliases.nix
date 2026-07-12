@@ -3,7 +3,7 @@
 {
   environment.shellAliases = {
     # Basic commands
-    ll = "ls -l";
+    l = "ls -l";
     la = "ls -la";
     c = "clear";
     n = "nvim"; 
