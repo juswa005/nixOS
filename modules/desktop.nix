@@ -8,7 +8,6 @@
   # Display Manager and Window Manager
   services.xserver.enable = true;
   services.displayManager.ly.enable = true;
-  services.desktopManager.plasma6.enable = true;
   programs.hyprland.enable = true;
   
   # Configure keymap in X11

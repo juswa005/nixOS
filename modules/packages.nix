@@ -70,6 +70,10 @@
     lazygit
     qbittorrent-cli
     zoxide
+    lazydocker
+    wifitui
+    pulsemixer
+    nvtopPackages.amd
 
     # Hyprland & Wayland Environment
     waybar
@@ -109,6 +113,9 @@
     dbeaver-bin
     mpv
     onlyoffice-desktopeditors
+    gparted
+    parted
+    efibootmgr
 
     # Theming & Appearance
     adwaita-icon-theme

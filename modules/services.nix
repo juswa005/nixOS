@@ -20,4 +20,7 @@
 
   # Flatpak
   services.flatpak.enable = true;
+
+  # GVfs for Nautilus (File Manager)
+  services.gvfs.enable = true;
 }
