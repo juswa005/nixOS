@@ -74,6 +74,7 @@
     wifitui
     pulsemixer
     nvtopPackages.amd
+    bat
 
     # Hyprland & Wayland Environment
     waybar
@@ -116,6 +117,7 @@
     gparted
     parted
     efibootmgr
+    feh
 
     # Theming & Appearance
     adwaita-icon-theme
@@ -131,8 +133,27 @@
     mcpelauncher-client
     mcpelauncher-ui-qt
 
-    # CTF
+    # CTF & Security Tools
     tcpdump
+    nmap        # Network scanning
+    wireshark   # Packet analysis
+    burpsuite   # Web vulnerability scanner/proxy
+    gobuster    # Directory/file enumeration
+    ffuf        # Fast web fuzzer
+    hashcat     # Password cracking
+    john        # Password cracking (John the Ripper)
+    binwalk     # Firmware analysis
+    steghide    # Steganography
+    exiftool    # Metadata extraction
+    ghidra      # Reverse engineering
+    radare2     # Reverse engineering
+    gdb         # GNU Debugger
+    pwndbg      # GDB plugin for exploit dev
+    sqlmap      # SQL injection tool
+    socat       # Multipurpose relay
+    netcat-gnu  # Networking utility
+    thc-hydra   # Network logon cracker
+    aircrack-ng # WiFi security
   ];
 
   # Shell configuration
