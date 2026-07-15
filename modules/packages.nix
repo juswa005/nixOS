@@ -75,6 +75,7 @@
     pulsemixer
     nvtopPackages.amd
     bat
+    stow
 
     # Hyprland & Wayland Environment
     waybar
@@ -111,7 +112,7 @@
     spotify
     gnome-calculator
     localsend
-    dbeaver-bin
+    #dbeaver-bin
     mpv
     onlyoffice-desktopeditors
     gparted
@@ -148,7 +149,7 @@
     ghidra      # Reverse engineering
     radare2     # Reverse engineering
     gdb         # GNU Debugger
-    pwndbg      # GDB plugin for exploit dev
+    # pwndbg      # GDB plugin for exploit dev
     sqlmap      # SQL injection tool
     socat       # Multipurpose relay
     netcat-gnu  # Networking utility
