@@ -76,6 +76,7 @@
     nvtopPackages.amd
     bat
     stow
+    tmux
 
     # Hyprland & Wayland Environment
     waybar
