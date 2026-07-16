@@ -8,9 +8,13 @@
   # Virtual Private Network
   services.tailscale.enable = true;
   
-  # Containerization
+  # Containerization and Virtualization
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
   virtualisation.docker.enable = true;
-
+  users.groups.libvirtd.members = [ "amiel" ];
+  virtualisation.spiceUSBRedirection.enable = true;
+  
   # Power Profiles Daemon (needed for powermode.sh)
   services.power-profiles-daemon.enable = true;
 
@@ -21,6 +25,6 @@
   # Flatpak
   services.flatpak.enable = true;
 
-  # GVfs for Nautilus (File Manager)
-  services.gvfs.enable = true;
+  # GPU mode
+  services.supergfxd.enable = true;
 }

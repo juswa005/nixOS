@@ -29,7 +29,7 @@
   ];
 
   # Nvidia GPU Configuration
-  services.xserver.videoDrivers = [ "nvidia" ];
+  #services.xserver.videoDrivers = [ "nvidia" ]; REMOVE MUNA FOR TRYING NEW SCRIPT PURPOSES
   hardware.graphics.enable = true;
   hardware.nvidia = {
     modesetting.enable = true;

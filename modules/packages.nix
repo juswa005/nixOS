@@ -77,6 +77,7 @@
     bat
     stow
     tmux
+    glow
 
     # Hyprland & Wayland Environment
     waybar
