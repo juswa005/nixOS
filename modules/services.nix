@@ -26,5 +26,5 @@
   services.flatpak.enable = true;
 
   # GPU mode
-  services.supergfxd.enable = true;
+  # services.supergfxd.enable = true;
 }

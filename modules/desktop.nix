@@ -28,12 +28,28 @@
     nerd-fonts.symbols-only
   ];
 
+  # GPU Drivers
+  services.xserver.videoDrivers = [ "amdgpu" "nvidia" ];
+
   # Nvidia GPU Configuration
-  #services.xserver.videoDrivers = [ "nvidia" ]; REMOVE MUNA FOR TRYING NEW SCRIPT PURPOSES
   hardware.graphics.enable = true;
   hardware.nvidia = {
     modesetting.enable = true;
     open = false;
     nvidiaSettings = true;
+
+    # Enable NVIDIA Runtime D3 (Automatic Sleep)
+    powerManagement.enable = true;
+    powerManagement.finegrained = true;
+
+    # Enable PRIME Offload and define your hardware IDs
+    prime = {
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;
+      };
+      amdgpuBusId = "PCI:5:0:0";
+      nvidiaBusId = "PCI:1:0:0";
+    };
   };
 }

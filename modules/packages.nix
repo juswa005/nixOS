@@ -78,6 +78,8 @@
     stow
     tmux
     glow
+    llmfit
+    ollama
 
     # Hyprland & Wayland Environment
     waybar
@@ -121,6 +123,7 @@
     parted
     efibootmgr
     feh
+    lmstudio
 
     # Theming & Appearance
     adwaita-icon-theme
