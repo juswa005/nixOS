@@ -43,6 +43,8 @@
     glow
     llmfit
     ollama
+    gpu-screen-record
+    slurp
 
     # Hyprland & Wayland Environment
     waybar
