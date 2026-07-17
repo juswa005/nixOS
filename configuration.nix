@@ -21,6 +21,8 @@
       ./modules/networking.nix
       ./modules/services.nix
       ./modules/aliases.nix
+      ./modules/overlays.nix
+      ./modules/shell.nix
     ];
 
   # Bootloader.
