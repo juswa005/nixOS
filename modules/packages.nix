@@ -43,7 +43,7 @@
     glow
     llmfit
     ollama
-    gpu-screen-record
+    ffmpeg
     slurp
 
     # Hyprland & Wayland Environment
