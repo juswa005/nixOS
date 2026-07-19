@@ -9,6 +9,7 @@
   services.xserver.enable = true;
   services.displayManager.ly.enable = true;
   programs.hyprland.enable = true;
+  programs.gpu-screen-recorder.enable = true;
   
   # Configure keymap in X11
   services.xserver.xkb = {
