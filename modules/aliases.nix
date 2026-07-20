@@ -6,10 +6,16 @@
     l = "ls -l";
     la = "ls -la";
     c = "clear";
-    n = "nvim"; 
+    n = "nvim";
+    dps = "docker ps";
+    dcu = "docker compose up --build -d";
+    dcd = "docker compose down"; 
+    fz = "fzf --preview='bat --style=plain --color=always {}'";
+    f = "frieren";
+
 
     # System update
-    nix-update = "sudo nixos-rebuild switch --flake .#nixos";
+    nrs = "sudo nixos-rebuild switch --flake /etc/nixos#nixos";
   };
 
   environment.systemPackages = [
