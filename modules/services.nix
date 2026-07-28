@@ -27,4 +27,8 @@
 
   # GPU mode
   # services.supergfxd.enable = true;
+
+  # Automounting USB
+  services.gvfs.enable = true;
+  services.udisks2.enable = true;
 }

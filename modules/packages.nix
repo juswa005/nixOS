@@ -45,6 +45,12 @@
     ollama
     ffmpeg
     slurp
+    unzip
+    ngrok
+    (python3.withPackages (ps: with ps; [
+      pwntools
+      pycryptodome
+    ]))
 
     # Hyprland & Wayland Environment
     waybar
@@ -74,6 +80,7 @@
     overskride
     tailscale
     qbittorrent
+    udiskie
 
     # Applications
     kitty
@@ -88,10 +95,11 @@
     parted
     efibootmgr
     feh
-    lmstudio
+    steam
 
     # Theming & Appearance
     adwaita-icon-theme
+    papirus-icon-theme
     gnome-themes-extra
 
     # Development & Virtualization
@@ -100,7 +108,6 @@
     distrobox
 
     # Minecraft
-    prismlauncher
     mcpelauncher-client
     mcpelauncher-ui-qt
 
