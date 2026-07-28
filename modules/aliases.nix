@@ -16,6 +16,9 @@
 
     # System update
     nrs = "sudo nixos-rebuild switch --flake /etc/nixos#nixos";
+
+    # System Delete Garbage
+    ngc = "sudo nix-collect-garbage";
   };
 
   environment.systemPackages = [
