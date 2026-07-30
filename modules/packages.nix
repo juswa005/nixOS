@@ -47,6 +47,9 @@
     slurp
     unzip
     ngrok
+    superfile
+
+    # python packages
     (python3.withPackages (ps: with ps; [
       pwntools
       pycryptodome
@@ -95,7 +98,7 @@
     parted
     efibootmgr
     feh
-    steam
+    protonplus
 
     # Theming & Appearance
     adwaita-icon-theme
