@@ -65,10 +65,17 @@
   users.users."amiel" = {
     isNormalUser = true;
     description = "Amiel Josh Basug";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "dialout" ];
     packages = with pkgs; [];
     shell = pkgs.fish;
   };
+
+
+
+        # Add udev rules for PlatformIO/Arduino
+      services.udev.packages = with pkgs; [ platformio-core.udev ];
+      
+
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
@@ -77,5 +84,8 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "26.05"; # Did you read the comment?
+
+
+
 
 }

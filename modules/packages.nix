@@ -48,6 +48,10 @@
     unzip
     ngrok
     superfile
+    mpd
+    ncmpcpp
+    mpc
+    cava
 
     # python packages
     (python3.withPackages (ps: with ps; [
@@ -57,6 +61,7 @@
 
     # Hyprland & Wayland Environment
     waybar
+    quickshell
     dunst
     wofi
     hyprpaper
@@ -78,6 +83,7 @@
     # System & Networking
     brightnessctl
     playerctl
+    zscroll
     pavucontrol
     networkmanagerapplet
     overskride
@@ -98,7 +104,10 @@
     parted
     efibootmgr
     feh
-    protonplus
+    amberol
+    nicotine-plus
+    feishin
+    supersonic
 
     # Theming & Appearance
     adwaita-icon-theme
@@ -113,6 +122,11 @@
     # Minecraft
     mcpelauncher-client
     mcpelauncher-ui-qt
+
+    # PlatformIO
+    platformio
+    platformio-core
+    platformio-chrootenv
 
     # CTF & Security Tools
     tcpdump

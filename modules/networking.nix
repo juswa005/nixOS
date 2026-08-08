@@ -20,6 +20,7 @@
     enable = true;
     # Allow the Tailscale UDP port through the firewall
     allowedUDPPorts = [ config.services.tailscale.port ];
+    allowedTCPPorts = [ 2234 ]; # For Nicotine+ (Soulseek)
     # Optional: Trust the Tailscale interface for easier local networking
     trustedInterfaces = [ "tailscale0" ];
   };
