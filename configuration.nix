@@ -72,6 +72,8 @@
 
 
 
+
+
         # Add udev rules for PlatformIO/Arduino
       services.udev.packages = with pkgs; [ platformio-core.udev ];
       

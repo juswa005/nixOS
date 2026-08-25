@@ -52,6 +52,8 @@
     ncmpcpp
     mpc
     cava
+    killall
+    qwen-code
 
     # python packages
     (python3.withPackages (ps: with ps; [
@@ -97,17 +99,17 @@
     spotify
     gnome-calculator
     localsend
-    #dbeaver-bin
     mpv
     onlyoffice-desktopeditors
     gparted
     parted
     efibootmgr
     feh
-    amberol
     nicotine-plus
-    feishin
     supersonic
+    firefox
+    blender
+    cura-appimage
 
     # Theming & Appearance
     adwaita-icon-theme
@@ -127,6 +129,10 @@
     platformio
     platformio-core
     platformio-chrootenv
+    
+    # EDA Softwares
+    librepcb
+    fritzing
 
     # CTF & Security Tools
     tcpdump
