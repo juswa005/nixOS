@@ -53,7 +53,7 @@
     mpc
     cava
     killall
-    qwen-code
+    zellij
 
     # python packages
     (python3.withPackages (ps: with ps; [
@@ -96,7 +96,6 @@
     # Applications
     kitty
     nautilus
-    spotify
     gnome-calculator
     localsend
     mpv
@@ -110,6 +109,7 @@
     firefox
     blender
     cura-appimage
+    nasm
 
     # Theming & Appearance
     adwaita-icon-theme
