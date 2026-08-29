@@ -85,7 +85,6 @@
     # System & Networking
     brightnessctl
     playerctl
-    zscroll
     pavucontrol
     networkmanagerapplet
     overskride
@@ -110,6 +109,7 @@
     blender
     cura-appimage
     nasm
+    retroarch
 
     # Theming & Appearance
     adwaita-icon-theme
@@ -155,6 +155,7 @@
     netcat-gnu  # Networking utility
     thc-hydra   # Network logon cracker
     aircrack-ng # WiFi security
+    termshark   #terminal based wireshark? hahahaha
   ];
 
 }

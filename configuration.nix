@@ -42,6 +42,9 @@
     "rd.systemd.show_status=auto"
     "btusb.enable_autosuspend=0"
   ];
+  
+  # Use the latest kernel available in nixpkgs
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Set your time zone.
   time.timeZone = "Asia/Manila";
