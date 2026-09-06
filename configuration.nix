@@ -23,6 +23,9 @@
       ./modules/aliases.nix
       ./modules/overlays.nix
       ./modules/shell.nix
+      
+      # CTF Modules
+      ./modules/ctf/default.nix
     ];
 
   # Bootloader.
@@ -68,7 +71,7 @@
   users.users."amiel" = {
     isNormalUser = true;
     description = "Amiel Josh Basug";
-    extraGroups = [ "networkmanager" "wheel" "docker" "dialout" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "dialout" "adbusers"];
     packages = with pkgs; [];
     shell = pkgs.fish;
   };
@@ -90,7 +93,14 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "26.05"; # Did you read the comment?
 
-
-
-
+  # ==========================================
+  # CTF Module Configuration
+  # ==========================================
+  ctf.forensics.enable = true;
+  ctf.osint.enable = true;
+  ctf.reversing.enable = true;
+  ctf.networking.enable = true;
+  ctf.crypto.enable = true;
+  ctf.web.enable = true;
+  ctf.utilities.enable = true;
 }

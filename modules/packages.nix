@@ -46,19 +46,22 @@
     ffmpeg
     slurp
     unzip
+    file-roller
     ngrok
     superfile
     mpd
     ncmpcpp
     mpc
     cava
+    pipes
     killall
     zellij
+    opencode
+
 
     # python packages
     (python3.withPackages (ps: with ps; [
-      pwntools
-      pycryptodome
+      # Python packages moved to ctf/utilities.nix
     ]))
 
     # Hyprland & Wayland Environment
@@ -68,7 +71,7 @@
     wofi
     hyprpaper
     swaybg
-    xdg-desktop-portal-hyprland
+
     wl-clipboard
     cliphist
     grim
@@ -94,7 +97,6 @@
 
     # Applications
     kitty
-    nautilus
     gnome-calculator
     localsend
     mpv
@@ -109,12 +111,17 @@
     blender
     cura-appimage
     nasm
-    retroarch
+    obsidian
+    nautilus
+
 
     # Theming & Appearance
     adwaita-icon-theme
     papirus-icon-theme
     gnome-themes-extra
+    nwg-look
+    libsForQt5.qt5ct
+    kdePackages.qt6ct
 
     # Development & Virtualization
     vscodium
@@ -135,27 +142,8 @@
     fritzing
 
     # CTF & Security Tools
-    tcpdump
-    nmap        # Network scanning
-    wireshark   # Packet analysis
-    burpsuite   # Web vulnerability scanner/proxy
-    gobuster    # Directory/file enumeration
-    ffuf        # Fast web fuzzer
-    hashcat     # Password cracking
-    john        # Password cracking (John the Ripper)
-    binwalk     # Firmware analysis
-    steghide    # Steganography
-    exiftool    # Metadata extraction
-    ghidra      # Reverse engineering
-    radare2     # Reverse engineering
-    gdb         # GNU Debugger
-    # pwndbg      # GDB plugin for exploit dev
-    sqlmap      # SQL injection tool
-    socat       # Multipurpose relay
-    netcat-gnu  # Networking utility
-    thc-hydra   # Network logon cracker
-    aircrack-ng # WiFi security
-    termshark   #terminal based wireshark? hahahaha
+    # Note: These have been moved to the modular CTF configuration in /etc/nixos/modules/ctf/
+    # Enable them in configuration.nix via ctf.*.enable = true;
   ];
 
 }

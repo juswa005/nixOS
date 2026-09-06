@@ -19,6 +19,20 @@
 
   # Dconf for GNOME apps and theming
   programs.dconf.enable = true;
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    config.common.default = "*";
+  };
+
+  environment.sessionVariables = {
+    GTK_USE_PORTAL = "1";
+  };
+
+  xdg.mime.defaultApplications = {
+    "inode/directory" = "org.gnome.Nautilus.desktop";
+  };
   # SSHASKPASS shit
   programs.ssh.askPassword = "";
 
@@ -28,6 +42,15 @@
     nerd-fonts.fira-code
     nerd-fonts.symbols-only
   ];
+
+  fonts.fontconfig = {
+    enable = true;
+    defaultFonts = {
+      monospace = [ "JetBrainsMono Nerd Font" ];
+      sansSerif = [ "JetBrainsMono Nerd Font" ];
+      serif = [ "JetBrainsMono Nerd Font" ];
+    };
+  };
 
   # GPU Drivers
   services.xserver.videoDrivers = [ "amdgpu" "nvidia" ];
